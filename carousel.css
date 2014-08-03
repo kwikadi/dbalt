@@ -33,6 +33,16 @@ body {
 .navbar-wrapper .navbar .container {
   width: auto;
 }
+.overlay {
+background: #25201f;
+opacity: .5;
+position: absolute;
+z-index: 0;
+top: 0;
+left: 0;
+bottom: 0;
+right: 0;
+}
 
 
 /* CUSTOMIZE THE CAROUSEL
