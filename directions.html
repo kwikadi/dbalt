@@ -13,9 +13,11 @@
     <!-- Bootstrap core CSS -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	
-	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-	
 	<link href="about.css" rel="stylesheet">
+	<link href="dir.css" rel="stylesheet">
+	
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -53,7 +55,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                <ul class="nav navbar-nav">
                   <li><a href="index.html">Home</a></li>
-                  <li><a href="directions.html">Directions</a></li>
+                  <li class="active"><a href="#">Directions</a></li>
 				  <li><a href="#info">Station Info</a></li>
 				  <li><a href="#nearest">Nearest Metro Station</a></li>
                   <li class="dropdown">
@@ -65,7 +67,7 @@
 						<li class="divider"></li>
                         <li><a href="#contact">Contact Us</a></li>
                         <li class="divider"></li>
-						<li><a href="#">About Us</a></li>
+						<li><a href="about.html">About Us</a></li>
                         
                      </ul>
                   </li>
@@ -106,42 +108,27 @@
          </nav>
       </div>
    </div>
+
+<div class="container">
+    <div class="row">
+		<h2>Directions</h2>
+			<br/><br/>
+		<form role="form" class="col-md-9 go-right">
+            <p>Which Metro Station do you plan to board from?</p>
+			<div class="form-group">
+			<input id="source" name="source" type="text" class="form-control" required>
+			<label for="source">Starting Station</label>
+			</div>
+			<br/><br/>
+			<p>And which one do you plan to get off on?</p>
+			<div class="form-group">
+			<input id="dest" name="dest" type="text" class="form-control" required>
+			<label for="dest">Destination Station</label>
+			</div>
+		</form>
+        </div>
 </div>
- <div class="container marketing"> 
-  <!-- START THE FEATURETTES -->
-	<div class ="names">
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Aditya Kumar<br><span class="text-muted">     12-CSS-05</span></h2>
-          </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive" src="assets/img/adi.jpg" alt="Generic placeholder image">
-        </div>
-      </div>
 
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive" src="assets/img/aman.jpg" alt="Generic placeholder image">
-        </div>
-        <div class="col-md-7">
-          <h2 class="featurette-heading" style="text-align:right">Aman Arora<br><span class="text-muted">     12-CSS-10</span></h2>
-          </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Chaitanya Gupta<br><span class="text-muted">     12-CSS-19</span></h2>
-          </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive" src="assets/img/chait.jpg" alt="Generic placeholder image">
-        </div>
-      </div>
-	</div>
-      <!-- /END THE FEATURETTES -->
 
 <div class="container">
 		<hr>
@@ -151,13 +138,13 @@
 	            <a href="https://plus.google.com/+Bootsnipp-page"><i id="social" class="fa fa-google-plus-square fa-3x social-gp"></i></a>
 	            <a href="mailto:bootsnipp@gmail.com"><i id="social" class="fa fa-envelope-square fa-3x social-em"></i></a>
 		</div>
-		<hr>
-</div>
+    <hr>
+	</div>
 
       <!-- FOOTER -->
       <footer>
         <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; Adi-Aman-Chait &middot;</p>
+        <p>&copy; Adi-Aman-Chait &middot; <a href="about.html">About</a></p>
       </footer>
 
     <!-- Bootstrap core JavaScript
