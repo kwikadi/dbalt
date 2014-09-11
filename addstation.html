@@ -8,10 +8,12 @@
     <meta name="author" content="">
     <link rel="icon" href="assets/img/icon.ico">
 
-    <title>Administrator Page</title>
+    <title>Admin: Add Station</title>
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="about.css" rel="stylesheet">
+    <link href="dir.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="justified-nav.css" rel="stylesheet">
@@ -37,47 +39,49 @@
       <div class="masthead">
         <h3 class="text-muted">DMRC Admin Page</h3>
         <ul class="nav nav-justified">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="addstation.html">Add Station</a></li>
+          <li><a href="admin.html">Home</a></li>
+          <li class="active"><a href="#">Add Station</a></li>
           <li><a href="editinfo.html">Edit Station Info.</a></li>
           <li><a href="lostfound.html">Lost/Found Data</a></li>
           <li><a href="#">Add Blog Post</a></li>
         </ul>
       </div>
+	<br>
+	<br>
+	<div class="row">
+        <div class="col-lg-8">
+          <h2>Basic Info</h2>
+		  <form role="form" class="col-md-9 go-right">
+            <p>Station Name</p>
+      <div class="form-group">
+      <input id="source" name="source" type="text" class="form-control" required>
+      <label for="source">Name</label>
+      </div>    
 
-      <!-- Jumbotron -->
-      <div class="jumbotron">
-        <h1>Add a Blog Post</h1>
-        <p class="lead">Blog posts keep your customers engaged and up-to-date. Click the Button below to add a Blog Post.</p>
-        <p><a class="btn btn-lg btn-success" href="#" role="button">Blog</a></p>
-      </div>
+           <p>Station Line</p>
+      <div class="form-group">
+      <input id="source" name="source" type="text" class="form-control" required>
+      <label for="source">Line</label>
+      </div>    
 
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-lg-4">
-          <h2>Add Station</h2>
-          <p>Add station name, line, position, and station information in the case of expansion of metro lines.</p>
-          <p><a class="btn btn-primary" href="#" role="button">Enter &raquo;</a></p>
+           <p>Station Next To</p>
+      <div class="form-group">
+      <input id="source" name="source" type="text" class="form-control" required>
+      <label for="source">Neighbour Station</label>
+      </div>    
+		
+		<br>
+
+  <button type="submit" class="btn btn-default">Continue to Station Info</button>
+    </form>
+
         </div>
-        <div class="col-lg-4">
-          <h2>Edit Station Info</h2>
-          <p>In the case of Facilities or general information about a station being changed, use this to keep the site up-to-date. </p>
-          <p><a class="btn btn-primary" href="editinfo.html" role="button">Enter &raquo;</a></p>
-       </div>
-        <div class="col-lg-4">
-          <h2>Lost/Found</h2>
-          <p>Keep Lost & Found databases updated through this page.</p>
-          <p><a class="btn btn-primary" href="lostfound.html" role="button">Enter &raquo;</a></p>
-        </div>
-      </div>
+	</div>
 
-      <!-- Site footer -->
+	<!-- Site footer -->
       <div class="footer">
         <p>&copy; Adi-Aman-Chait</p>
       </div>
-
-    </div> <!-- /container -->
-
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
