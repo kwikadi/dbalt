@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="icon" href="assets/img/icon.ico">
 
-    <title>Station Info</title>
+    <title>Nearest Metro Station</title>
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -16,8 +16,8 @@
 	<link href="about.css" rel="stylesheet">
 	<link href="dir.css" rel="stylesheet">
 	
-	
-	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">	
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -56,16 +56,17 @@
                <ul class="nav navbar-nav">
                   <li><a href="index.html">Home</a></li>
                   <li><a href="directions.html">Directions</a></li>
-				  <li class="active"><a href="#">Station Info</a></li>
-				  <li><a href="nearest.html">Nearest Metro Station</a></li>
+				  <li><a href="info.html">Station Info</a></li>
+				  <li class="active"><a href="#nearest">Nearest Metro Station</a></li>
                   <li class="dropdown">
                      <a href="#what" class="dropdown-toggle" data-toggle="dropdown">More <b class="caret"></b></a>
                      <ul class="dropdown-menu">
-                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#gallery">Blog</a></li>
 						<li class="divider"></li>
 						<li><a href="#gallery">Gallery</a></li>
 						<li class="divider"></li>
-						<li><a href="about.html">About Us</a></li> 
+						<li><a href="about.html">About Us</a></li>
+                        
                      </ul>
                   </li>
                </ul>
@@ -108,13 +109,26 @@
 
 <div class="container">
     <div class="row">
-		<h2>Station Info</h2>
+		<h2>Nearest Metro Station</h2>
 			<br/><br/>
 		<form role="form" class="col-md-9 go-right">
-            <p>Enter Station Name for which you want information</p>
+            <p>Enter your pincode: </p>
 			<div class="form-group">
 			<input id="source" name="source" type="text" class="form-control" required>
-			<label for="source">Station Info</label>
+			<label for="source">Pincode</label>
+			</div>
+			<br/>
+			<p style = "text-align:center">
+			<button type="submit" class="btn btn-primary"> <i class="glyphicon glyphicon-search"></i></button>
+			</p>
+			<br/>
+			<h3 style="text-align:center">OR</h3>
+			<br>
+			<br>
+			<p>Enter a famous place nearby: </p>
+			<div class="form-group">
+			<input id="dest" name="dest" type="text" class="form-control" required>
+			<label for="dest">Famous Place</label>
 			</div>
 			<p style = "text-align:center">
 			<button type="submit" class="btn btn-primary"> <i class="glyphicon glyphicon-search"></i></button>
@@ -123,6 +137,8 @@
         </div>
 		
 </div>
+
+	
 
 
 <div class="container">
