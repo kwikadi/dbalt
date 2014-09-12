@@ -58,12 +58,11 @@
                   <li class="active"><a href="#">Directions</a></li>
 				  <li><a href="info.html">Station Info</a></li>
 				  <li><a href="nearest.html">Nearest Metro Station</a></li>
+				  <li><a href="blog.html">Blog</a></li>
                   <li class="dropdown">
                      <a href="#what" class="dropdown-toggle" data-toggle="dropdown">More <b class="caret"></b></a>
                      <ul class="dropdown-menu">
-                        <li><a href="#gallery">Blog</a></li>
-						<li class="divider"></li>
-						<li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
 						<li class="divider"></li>
 						<li><a href="about.html">About Us</a></li>
                         
@@ -110,23 +109,25 @@
 <div class="container">
     <div class="row">
 		<h2>Directions</h2>
-			<br/><br/>
-		<form role="form" class="col-md-9 go-right">
-            <p>Which Metro Station do you plan to board from?</p>
+			
+		<form role="form" class="col-lg-6 go-right">
+            <br><br>
+			<p>Enter Metro Station you want to board from:</p>
 			<div class="form-group">
 			<input id="source" name="source" type="text" class="form-control" required>
 			<label for="source">Starting Station</label>
 			</div>
 			<br/><br/>
-			<p>And which one do you plan to get off on?</p>
+			<p>Enter Metro Station you want to get off on:</p>
 			<div class="form-group">
 			<input id="dest" name="dest" type="text" class="form-control" required>
 			<label for="dest">Destination Station</label>
 			</div>
 			<p style = "text-align:center">
-			<button type="submit" class="btn btn-primary"> <i class="glyphicon glyphicon-search"></i></button>
+			<button type="submit" class="btn btn-primary"> <i class="glyphicon glyphicon-search"></i>   Search</button>
 			</p>
 		</form>
+		<img src="shadab.jpg" class="img-thumbnail" alt="Metro Map">
         </div>
 		
 </div>
@@ -142,12 +143,10 @@
 	            <a href="https://plus.google.com/s/Delhi%20Metro/people"><i id="social" class="fa fa-google-plus-square fa-3x social-gp"></i></a>
 	            <a href="mailto:helpline@dmrc.org"><i id="social" class="fa fa-envelope-square fa-3x social-em"></i></a>
 		</div>
-    <hr>
 	</div>
 
       <!-- FOOTER -->
       <footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
         <p>&copy; Adi-Aman-Chait &middot; <a href="about.html">About</a></p>
       </footer>
 

@@ -58,12 +58,11 @@
                   <li><a href="directions.html">Directions</a></li>
 				  <li><a href="info.html">Station Info</a></li>
 				  <li class="active"><a href="#nearest">Nearest Metro Station</a></li>
+				  <li><a href="blog.html">Blog</a></li>
                   <li class="dropdown">
                      <a href="#what" class="dropdown-toggle" data-toggle="dropdown">More <b class="caret"></b></a>
                      <ul class="dropdown-menu">
-                        <li><a href="#gallery">Blog</a></li>
-						<li class="divider"></li>
-						<li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
 						<li class="divider"></li>
 						<li><a href="about.html">About Us</a></li>
                         
@@ -111,31 +110,32 @@
     <div class="row">
 		<h2>Nearest Metro Station</h2>
 			<br/><br/>
+		<div class="col-md-6">
 		<form role="form" class="col-md-9 go-right">
             <p>Enter your pincode: </p>
 			<div class="form-group">
 			<input id="source" name="source" type="text" class="form-control" required>
 			<label for="source">Pincode</label>
 			</div>
-			<br/>
+			<br>
 			<p style = "text-align:center">
-			<button type="submit" class="btn btn-primary"> <i class="glyphicon glyphicon-search"></i></button>
+			<button type="submit" class="btn btn-primary"> <i class="glyphicon glyphicon-search"></i> Search</button>
 			</p>
-			<br/>
-			<h3 style="text-align:center">OR</h3>
-			<br>
-			<br>
+		</form>
+		</div>
+		<div class="col-md-6">
+		<form role="form" class="col-md-9 go-right">
 			<p>Enter a famous place nearby: </p>
 			<div class="form-group">
 			<input id="dest" name="dest" type="text" class="form-control" required>
 			<label for="dest">Famous Place</label>
 			</div>
 			<p style = "text-align:center">
-			<button type="submit" class="btn btn-primary"> <i class="glyphicon glyphicon-search"></i></button>
+			<button type="submit" class="btn btn-primary"> <i class="glyphicon glyphicon-search"></i> Search</button>
 			</p>
 		</form>
         </div>
-		
+	</div>	
 </div>
 
 	
@@ -149,12 +149,10 @@
 	            <a href="https://plus.google.com/s/Delhi%20Metro/people"><i id="social" class="fa fa-google-plus-square fa-3x social-gp"></i></a>
 	            <a href="mailto:helpline@dmrc.org"><i id="social" class="fa fa-envelope-square fa-3x social-em"></i></a>
 		</div>
-    <hr>
 	</div>
 
       <!-- FOOTER -->
       <footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
         <p>&copy; Adi-Aman-Chait &middot; <a href="about.html">About</a></p>
       </footer>
 
