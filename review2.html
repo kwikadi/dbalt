@@ -8,19 +8,18 @@
     <meta name="author" content="">
     <link rel="icon" href="assets/img/icon.ico">
 
-    <title>Directions</title>
+    <title>Reviews</title>
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	
+	<link href="car.css" rel="stylesheet">
 	<link href="about.css" rel="stylesheet">
-	<link href="dir.css" rel="stylesheet">
 	
 	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
-
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="assets/js/ie-emulation-modes-warning.js"></script>
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
@@ -37,7 +36,7 @@
   </head>
   
   
-  <div class="container" id="navnav">
+  <div class="container" id="navnavnav">
    <div class="row">
       <div class="col-md-12">
          <nav class="navbar navbar-default" role="navigation">
@@ -49,19 +48,19 @@
                <span class="icon-bar"></span>
                <span class="icon-bar"></span>
                </button>
-               <a class="navbar-brand" href="index.html">Delhi Metro Railway Corporation</a>
+               <a class="navbar-brand" href="#">Delhi Metro Railway Corporation</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                <ul class="nav navbar-nav">
-                  <li><a href="index.html">Home</a></li>
-                  <li class="active"><a href="#">Directions</a></li>
+                  <li><a href="#home">Home</a></li>
+                  <li><a href="directions.html">Directions</a></li>
 				  <li><a href="info.html">Station Information</a></li>
 				  <li><a href="nearest.html">Nearest Metro Station</a></li>
                   <li class="dropdown">
                      <a href="#what" class="dropdown-toggle" data-toggle="dropdown">More <b class="caret"></b></a>
                      <ul class="dropdown-menu">
-                        <li><a href="review.html">Reviews</a></li>
+						<li><a href="review.html">Reviews</a></li>
 						<li class="divider"></li>
 						<li><a href="about.html">About Us</a></li>
                         
@@ -104,37 +103,36 @@
          </nav>
       </div>
    </div>
-
-<div class="container">
-    <div class="row">
-		<h2>Directions</h2>
-			
-		<form role="form" class="col-lg-6 go-right">
-            <br><br>
-			<p>Enter Metro Station you want to board from:</p>
-			<div class="form-group">
-			<input id="source" name="source" type="text" class="form-control" required>
-			<label for="source">Starting Station</label>
-			</div>
-			<br/><br/>
-			<p>Enter Metro Station you want to get off on:</p>
-			<div class="form-group">
-			<input id="dest" name="dest" type="text" class="form-control" required>
-			<label for="dest">Destination Station</label>
-			</div>
-			<p style = "text-align:center">
-			<button type="submit" class="btn btn-primary"> <i class="glyphicon glyphicon-search"></i>   Search</button>
-			</p>
-		</form>
-		<img src="assets/img/dir.jpg" class="img-thumbnail" alt="Metro Map">
-        </div>
-		
 </div>
+  
+  
+  
+<br><br><br></br></br></br>
 
-	
+    
 
+    <div class="container marketing">
 
-<div class="container">
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4">
+          <img class="img-circle" src="assets/img/dir.png" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+          <h2>Place</h2>
+          <p>Just enter your entry and exit station, and get directions, with detailed information about lines and interchange stations, instantly!</p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="assets/img/info.png" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+          <h2>Holder</h2>
+          <p>Just enter a metro station name, and find out useful information about it, like lift and escalator access, nearby famous places, bathrooms etc.</p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="assets/img/met.png" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+          <h2>Text</h2>
+          <p>Enter any place, and on the click of a button, find the closest metro station to that location! This is just placeholder text to make description 3 lines</p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+	<div class="container">
 		<hr>
         <div class="text-center center-block">
                 <a href="https://www.facebook.com/pages/DMRC/190111974341212"><i id="social" class="fa fa-facebook-square fa-3x social-fb"></i></a>
@@ -144,10 +142,16 @@
 		</div>
 	</div>
 
+     
+
       <!-- FOOTER -->
       <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
         <p>&copy; Adi-Aman-Chait &middot; <a href="about.html">About</a></p>
       </footer>
+
+    </div><!-- /.container -->
+
 
     <!-- Bootstrap core JavaScript
     ================================================== -->

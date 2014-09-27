@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="icon" href="assets/img/icon.ico">
 
-    <title>Directions</title>
+    <title>Station Reviews</title>
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -16,8 +16,8 @@
 	<link href="about.css" rel="stylesheet">
 	<link href="dir.css" rel="stylesheet">
 	
-	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-
+	
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">	
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -55,16 +55,15 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                <ul class="nav navbar-nav">
                   <li><a href="index.html">Home</a></li>
-                  <li class="active"><a href="#">Directions</a></li>
-				  <li><a href="info.html">Station Information</a></li>
+                  <li><a href="directions.html">Directions</a></li>
+				  <li><a href="#">Station Information</a></li>
 				  <li><a href="nearest.html">Nearest Metro Station</a></li>
                   <li class="dropdown">
                      <a href="#what" class="dropdown-toggle" data-toggle="dropdown">More <b class="caret"></b></a>
                      <ul class="dropdown-menu">
-                        <li><a href="review.html">Reviews</a></li>
+                        <li><a href="#gallery">Reviews</a></li>
 						<li class="divider"></li>
-						<li><a href="about.html">About Us</a></li>
-                        
+						<li><a href="about.html">About Us</a></li> 
                      </ul>
                   </li>
                </ul>
@@ -107,31 +106,21 @@
 
 <div class="container">
     <div class="row">
-		<h2>Directions</h2>
-			
-		<form role="form" class="col-lg-6 go-right">
-            <br><br>
-			<p>Enter Metro Station you want to board from:</p>
+		<h2>Station Reviews</h2>
+			<br/><br/>
+		<form role="form" class="col-lg-6 go-right" action="review2.html">
+            <p>Enter Station Name for which you want to view reviews:</p>
 			<div class="form-group">
 			<input id="source" name="source" type="text" class="form-control" required>
-			<label for="source">Starting Station</label>
-			</div>
-			<br/><br/>
-			<p>Enter Metro Station you want to get off on:</p>
-			<div class="form-group">
-			<input id="dest" name="dest" type="text" class="form-control" required>
-			<label for="dest">Destination Station</label>
+			<label for="source">Station Name</label>
 			</div>
 			<p style = "text-align:center">
-			<button type="submit" class="btn btn-primary"> <i class="glyphicon glyphicon-search"></i>   Search</button>
+			<button type="submit" class="btn btn-primary"> <i class="glyphicon glyphicon-search"></i> Search</button>
 			</p>
 		</form>
-		<img src="assets/img/dir.jpg" class="img-thumbnail" alt="Metro Map">
         </div>
 		
 </div>
-
-	
 
 
 <div class="container">
